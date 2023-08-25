@@ -57,7 +57,12 @@ export default function Hero() {
           Kampung Santri
         </Heading>
 
-        <Text fontSize={["md", "md", "xl"]} fontFamily={nunito} color="white">
+        <Text
+          fontSize={["md", "md", "xl"]}
+          fontWeight="bold"
+          fontFamily={nunito}
+          color="white"
+        >
           &quot;Satu Kampung, Santri Semua&quot;
         </Text>
       </Box>
