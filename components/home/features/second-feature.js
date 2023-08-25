@@ -13,19 +13,26 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 
+const COLOR_KS = "#639c33";
+const opti = `'Kaisei Opti', serif`;
+const nunito = `'Nunito', sans-serif`;
+
 const Feature = ({ heading, text }) => {
   return (
     <GridItem>
-      <chakra.h3 fontSize="xl" fontWeight="600">
+      <chakra.h3
+        fontSize={["lg", "lg", "xl"]}
+        fontWeight="600"
+        fontFamily={nunito}
+      >
         {heading}
       </chakra.h3>
-      <chakra.p>{text}</chakra.p>
+      <chakra.p fontFamily={nunito}>{text}</chakra.p>
     </GridItem>
   );
 };
 
 export default function SecondFeature() {
-  const opti = `'Kaisei Opti', serif`;
   return (
     <Box
       as={Container}
@@ -49,17 +56,22 @@ export default function SecondFeature() {
       >
         <GridItem colSpan={1}>
           <VStack alignItems="flex-start" spacing="20px">
-            <chakra.h2 fontSize="3xl" fontWeight="700" fontFamily={opti}>
+            <chakra.h2
+              fontSize="3xl"
+              fontWeight="700"
+              fontFamily={opti}
+              color={COLOR_KS}
+            >
               Kampung Santri
             </chakra.h2>
             <Button colorScheme="green" size="md">
-              <Link href="/about">Know Us More</Link>
+              <Link href="/about">More About Us</Link>
             </Button>
           </VStack>
         </GridItem>
         <GridItem>
           <Flex>
-            <chakra.p>
+            <chakra.p fontFamily={nunito}>
               Pesantren Kampung Santri, pesantren ahlussunnah wal jamaah.
               Pesantren bermanhaj salaf yang terus berusaha selalu berjalan
               diatas agama Islam yang haq berdasarkan Alqur&apos;an dan sunnah

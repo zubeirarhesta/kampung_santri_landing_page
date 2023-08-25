@@ -96,16 +96,12 @@ const TestimonialAvatar = ({ src, name, title }) => {
 export default function Testimonials() {
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container
-        maxW={"7xl"}
-        py={16}
-        as={Stack}
-        spacing={12}
-        fontFamily={nunito}
-      >
+      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
-          <Heading>Apa Kata Mereka</Heading>
-          <Text> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
+          <Heading fontFamily={nunito}>Apa Kata Mereka</Heading>
+          {/* <Text fontFamily={nunito}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </Text> */}
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}
