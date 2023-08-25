@@ -58,7 +58,7 @@ export default function Hero() {
         </Heading>
 
         <Text fontSize={["md", "md", "xl"]} fontFamily={nunito} color="white">
-          "Satu Kampung, Santri Semua"
+          &quot;Satu Kampung, Santri Semua&quot;
         </Text>
       </Box>
     </Flex>

@@ -62,8 +62,8 @@ export default function SecondFeature() {
             <chakra.p>
               Pesantren Kampung Santri, pesantren ahlussunnah wal jamaah.
               Pesantren bermanhaj salaf yang terus berusaha selalu berjalan
-              diatas agama Islam yang haq berdasarkan Alqur'an dan sunnah nabi
-              sesuai pemahaman para sahabat
+              diatas agama Islam yang haq berdasarkan Alqur&apos;an dan sunnah
+              nabi sesuai pemahaman para sahabat
             </chakra.p>
           </Flex>
         </GridItem>

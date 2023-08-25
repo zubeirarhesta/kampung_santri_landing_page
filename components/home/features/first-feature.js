@@ -53,7 +53,7 @@ export default function FirstFeature() {
           <Text color={"gray.500"} fontSize={["md", "md", "lg"]}>
             Pesantren Kampung Santri adalah mitra ayah bunda dalam mendidik
             putri tercinta agar menjadi generasi terbaik. Generasi yang
-            mencintai Allah dan rasulNya. Yang menjadikan Alqur'an sebagai
+            mencintai Allah dan rasulNya. Yang menjadikan Alqur&apos;an sebagai
             panduan hidup dengan selalu membaca, menghafal dan mengamalkan
             isinya. Generasi yang berjaya dengan merealisasikan tauhid dan
             mengamalkan sunnah nabi shalallahu alaihi wasallam dalam seluruh
