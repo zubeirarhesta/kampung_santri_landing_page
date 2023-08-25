@@ -22,7 +22,7 @@ const Feature = ({ heading, text }) => {
     <GridItem>
       <chakra.h3
         fontSize={["lg", "lg", "xl"]}
-        fontWeight="600"
+        fontWeight="800"
         fontFamily={nunito}
       >
         {heading}
