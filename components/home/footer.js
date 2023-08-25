@@ -60,8 +60,8 @@ export default function Footer() {
           style={{
             objectFit: "contain",
             objectPosition: "top",
-            width: "20px",
-            height: "20px",
+            width: "35px",
+            height: "35px",
           }}
         />
         <Text>© 2023 Kampung Santri. All rights reserved</Text>
