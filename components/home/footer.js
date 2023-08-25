@@ -12,13 +12,15 @@ import {
 import Image from "next/image";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
+const nunito = `'Nunito', sans-serif`;
+
 const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
       rounded={"full"}
-      w={8}
-      h={8}
+      w={10}
+      h={10}
       cursor={"pointer"}
       as={"a"}
       href={href}
@@ -64,7 +66,9 @@ export default function Footer() {
             height: "35px",
           }}
         />
-        <Text>© 2023 Kampung Santri. All rights reserved</Text>
+        <Text fontWeight="bold" fontFamily={nunito}>
+          © 2023 Kampung Santri. All rights reserved
+        </Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />

@@ -11,6 +11,10 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
+const COLOR_KS = "#639c33";
+const opti = `'Kaisei Opti', serif`;
+const nunito = `'Nunito', sans-serif`;
+
 const Testimonial = (props) => {
   const { children } = props;
 
@@ -54,7 +58,7 @@ const TestimonialHeading = (props) => {
   const { children } = props;
 
   return (
-    <Heading as={"h3"} fontSize={"xl"}>
+    <Heading as={"h3"} fontSize={"xl"} fontFamily={nunito}>
       {children}
     </Heading>
   );
@@ -68,6 +72,7 @@ const TestimonialText = (props) => {
       textAlign={"center"}
       color={useColorModeValue("gray.600", "gray.400")}
       fontSize={"sm"}
+      fontFamily={nunito}
     >
       {children}
     </Text>
@@ -76,7 +81,7 @@ const TestimonialText = (props) => {
 
 const TestimonialAvatar = ({ src, name, title }) => {
   return (
-    <Flex align={"center"} mt={8} direction={"column"}>
+    <Flex align={"center"} mt={8} direction={"column"} fontFamily={nunito}>
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
@@ -91,10 +96,16 @@ const TestimonialAvatar = ({ src, name, title }) => {
 export default function Testimonials() {
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
+      <Container
+        maxW={"7xl"}
+        py={16}
+        as={Stack}
+        spacing={12}
+        fontFamily={nunito}
+      >
         <Stack spacing={0} align={"center"}>
           <Heading>Apa Kata Mereka</Heading>
-          {/* <Text>We have been working with clients around the world</Text> */}
+          <Text> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -128,7 +139,7 @@ export default function Testimonials() {
               src={
                 "https://w0.peakpx.com/wallpaper/686/39/HD-wallpaper-one-punch-man-anime-saitama.jpg"
               }
-              name={"Saitama"}
+              name={"Saiful"}
               title={"Ayahanda Fulanah"}
             />
           </Testimonial>
